@@ -1,6 +1,7 @@
 /* Local Amiri Regular */
 @font-face {
   font-family: 'Amiri';
+  font-weight: 700;
   src: url('./assets/Amiri-Regular.ttf') format('woff2'),
        url('./assets/Amiri-Regular.ttf') format('woff');
 }
@@ -8,14 +9,12 @@
 body {
   margin: 0;
   font-family: 'Amiri';
-
   /* Background image */
   background-image: url('assets/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,11 +23,11 @@ body {
 
 .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.88); /* translucent */
-  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.6); /* translucent */
+  padding: 20px 30px;
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.25);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 .container h2 {
@@ -38,7 +37,7 @@ body {
 
 h1 {
   margin: 0 0 20px 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 #count {
@@ -54,7 +53,7 @@ h1 {
 
 button {
   font-family: 'Amiri';
-
+  font-weight: bold;
   padding: 12px 24px;
   font-size: 1rem;
   border: none;
