@@ -4,7 +4,6 @@ let lastIncrement = 0;
 
 const countEl = document.getElementById('count');
 const container = document.getElementById('counter-container');
-const undoBtn = document.getElementById('undo');
 const resetBtn = document.getElementById('reset');
 
 function updateDisplay() {
@@ -17,12 +16,6 @@ container.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') return; // ignore button clicks
   lastIncrement = count;
   count++;
-  updateDisplay();
-});
-
-// Undo
-undoBtn.addEventListener('click', () => {
-  count = lastIncrement;
   updateDisplay();
 });
 
