@@ -1,11 +1,14 @@
-const CACHE_NAME = 'tasbih-cache-v1';
+const CACHE_NAME = 'tasbih-cache-v3';
 const urlsToCache = [
   './',
   './index.html',
   './style.css',
   './script.js',
-  './manifest.json'
+  './manifest.json',
+  './assets/background.jpg',
+  './assets/icon.jpg'
 ];
+
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
