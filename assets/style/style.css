@@ -1,16 +1,15 @@
 /* Local Amiri Regular */
 @font-face {
   font-family: 'Amiri';
-  font-weight: 700;
-  src: url('./assets/Amiri-Regular.ttf') format('woff2'),
-       url('./assets/Amiri-Regular.ttf') format('woff');
+  font-weight: 400;
+  src: url('../fonts/Amiri-Regular.ttf') format('truetype');
 }
 
 body {
   margin: 0;
-  font-family: 'Amiri';
+  font-family: 'Amiri', serif;
   /* Background image */
-  background-image: url('assets/background.jpg');
+  background-image: url('../images/background.jpg');  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
